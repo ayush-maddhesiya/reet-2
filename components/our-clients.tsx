@@ -107,9 +107,9 @@ export default function OurClients() {
               <TabsTrigger value="panel" className="text-sm md:text-base">
                 Panel Manufacturing
               </TabsTrigger>
-              <TabsTrigger value="government" className="text-sm md:text-base">
+              {/* <TabsTrigger value="government" className="text-sm md:text-base">
                 Government Projects
-              </TabsTrigger>
+              </TabsTrigger> */}
             </TabsList>
           </div>
 

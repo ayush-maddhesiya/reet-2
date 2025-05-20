@@ -69,11 +69,11 @@ export default function Footer() {
                   Electrical Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#government" className="text-gray-300 hover:text-white transition-colors">
                   Government Projects
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="#panel" className="text-gray-300 hover:text-white transition-colors">
                   Panel Manufacturing
