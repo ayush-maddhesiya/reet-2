@@ -14,7 +14,7 @@ export default function AboutUs() {
       name: "Rahul Akhand",
       position: "Managing Director",
       contact: "+91 98765 43210",
-      image: "/design.jpg?height=300&width=300",
+      image: "/akhand.jpg?height=300&width=300",
     },
     {
       name: "Shakti Maddhesiya",

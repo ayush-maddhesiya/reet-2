@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
           <div className="relative w-full h-[350px] md:h-[450px] lg:h-[400px] rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://imgs.search.brave.com/Vfi-S7dkSF6TJdPPMNuyChhsyallmuPhHiefK1UrBzk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNjL2Zk/L2U4LzNjZmRlODIy/MjRjOWViOTI1N2Ji/NDkzNGVjYjA3N2M0/LmpwZw"
+              src="https://images.unsplash.com/photo-1681581565914-a00677edee63?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Reet Associates Electrical Solutions"
               className="object-cover w-full h-full"
             />
