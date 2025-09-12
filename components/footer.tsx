@@ -103,11 +103,11 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-gray-400" />
                 <span className="text-gray-300">
-                  102 First Floor, Khushboo Avenue,<br />
-                   Bapat Square, AH - 8, Sr. HIG, Sukhliya,<br /> 
-                   Indore, Madhya Pradesh 452010<br />
-                  India
+                  217, Second Floor, Arbitto Mall, PU4,<br />
+                  Near C-21 Mall, Scheme No 54,<br />
+                  Indore, Madhya Pradesh 452010
                 </span>
+
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />
