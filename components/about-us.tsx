@@ -13,25 +13,25 @@ export default function AboutUs() {
     {
       name: "Rahul Akhand",
       position: "Managing Director",
-      contact: "+91 98765 43210",
+      contact: "+91 81097 89795",
       image: "/akhand.jpg?height=300&width=300",
     },
     {
       name: "Shakti Maddhesiya",
       position: "Technical Director",
-      contact: "+91 98765 43211",
+      contact: "+91 79995 50626",
       image: "/shakti.jpg",
     },
     {
       name: "Rohan Raguvanshi",
       position: "Operations Manager",
-      contact: "+91 98765 43212",
+      contact: "+91 83195 43348",
       image: "/rohan.jpg?height=300&width=300",
     },
     {
       name: "Rahul Choudhary",
       position: "Business Development Manager",
-      contact: "+91 98765 43213",
+      contact: "+91 70000 50979",
       image: "/babba.jpg?height=300&width=300",
     },
   ]
