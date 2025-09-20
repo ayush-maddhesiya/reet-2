@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef } from "react"
-import { Lightbulb, Wrench, Factory, PhoneCall } from "lucide-react"
+import { Lightbulb, Idea, Wrench, Factory, PhoneCall } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useInView } from "@/hooks/use-in-view"
 
