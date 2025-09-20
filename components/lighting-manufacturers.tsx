@@ -10,7 +10,7 @@ export default function lightingmanufacturers() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, threshold: 0.1 })
 
-  const panels = [
+  const lighting = [
     {
       name: "Indoor Lighting",
       description: "Custom-designed control panels for industrial automation and process control applications.",
@@ -53,7 +53,7 @@ export default function lightingmanufacturers() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Panel Manufacturing</h2>
           <p className="text-lg text-gray-600">
-            Reet Associates specializes in custom electrical panel manufacturing, delivering high-quality solutions
+            Reet Associates specializes in custom Ligting manufacturing, delivering high-quality solutions
             tailored to your specific requirements.
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function lightingmanufacturers() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {panels.map((panel, index) => (
+          {panels.map((lighting, index) => (
             <Card
               key={index}
               className={`overflow-hidden transition-all duration-700 delay-${index * 100} ${
