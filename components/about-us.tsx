@@ -11,28 +11,32 @@ export default function AboutUs() {
 
   const team = [
     {
-      name: "Rahul Akhand",
+      name: "Rahul Aakhand",
       position: "Managing Director",
       contact: "+91 81097 89795",
       image: "/akhand.jpg?height=300&width=300",
+      emailid: "rahulaakhand@gmail.com",
     },
     {
       name: "Shakti Maddhesiya",
       position: "Technical Director",
       contact: "+91 79995 50626",
       image: "/shakti.jpg",
+      emailid: "er.shakti.madheshiya@gmail.com",
     },
     {
       name: "Rohan Raguvanshi",
       position: "Operations Manager",
       contact: "+91 83195 43348",
       image: "/rohan.jpg?height=300&width=300",
+      emailid: "rohandltc@gmail.com",
     },
     {
       name: "Rahul Choudhary",
       position: "Business Development Manager",
       contact: "+91 70000 50979",
       image: "/babba.jpg?height=300&width=300",
+      emailid: "rahul39tx@gmail.com",
     },
   ]
 
@@ -130,7 +134,7 @@ export default function AboutUs() {
                 </div>
                 <div className="flex items-center text-gray-700">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>{`${member.name.toLowerCase().replace(" ", ".")}@reetassociates.com`}</span>
+                  <span>{member.emailid}</span>
                 </div>
               </CardContent>
             </Card>
