@@ -74,6 +74,11 @@ export default function Footer() {
                   Government Projects
                 </Link>
               </li> */}
+               <li>
+                <Link href="#lighting" className="text-gray-300 hover:text-white transition-colors">
+                  Lightng Manufacturers
+                </Link>
+              </li>
               <li>
                 <Link href="#panel" className="text-gray-300 hover:text-white transition-colors">
                   Panel Manufacturing
