@@ -85,25 +85,26 @@ export default function Electrical() {
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Quality Materials</h4>
-              <p className="text-gray-600">We use only high-quality materials that meet industry standards.</p>
+              <p className="text-gray-600">We use only premium materials that meet the highest industry standards.
+              </p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Timely Delivery</h4>
-              <p className="text-gray-600">We commit to completing projects on time without compromising quality.</p>
+              <p className="text-gray-600">We are committed to completing projects on schedule without compromising quality.</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Cost-Effective Solutions</h4>
               <p className="text-gray-600">
-                Our solutions are designed to be cost-effective without sacrificing quality.
+                We deliver solutions that are cost-effective without compromising on quality.
               </p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">24/7 Support</h4>
-              <p className="text-gray-600">We provide round-the-clock support for emergencies and maintenance.</p>
+              <p className="text-gray-600">We provide round-the-clock assistance for emergencies and ongoing maintenance.</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Customized Approach</h4>
-              <p className="text-gray-600">We tailor our services to meet the specific needs of each client.</p>
+              <p className="text-gray-600">We tailor our services to meet the unique needs of each client.</p>
             </div>
           </div>
         </div>
