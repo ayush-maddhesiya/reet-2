@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef } from "react"
-import { Lightbulb, Idea, Wrench, Factory, PhoneCall } from "lucide-react"
+import { Lightbulb, Wrench, Factory, PhoneCall } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useInView } from "@/hooks/use-in-view"
 
@@ -14,7 +14,7 @@ export default function Electrical() {
       title: "Electrical Consultant & Service Provider",
       description:
         "Expert electrical solutions for industrial, commercial, and residential projects—built on safety, efficiency, and reliability.",
-       icon:<Idea className="h-10 w-10 text-gray-800" />,
+       icon:<Wrench className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Lighting Manufacturers & Suppliers",
