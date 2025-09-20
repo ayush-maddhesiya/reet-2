@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import Electrical from "@/components/electrical"
 import GovernmentProjects from "@/components/government-projects"
-import lightingmanufacturers from "@/components/lighting-manufacturers"
+import LightingManufacturers from "@/components/lighting-manufacturers"
 import PanelManufacturing from "@/components/panel-manufacturing"
 import OurClients from "@/components/our-clients"
 import AboutUs from "@/components/about-us"
@@ -60,7 +60,7 @@ export default function Home() {
       </div>
 
       <div ref={lightingRef} id="lighting">
-        <Lighting />
+        <LightingManufacturing />
       </div>
       
       {/* <div ref={governmentRef} id="government">
