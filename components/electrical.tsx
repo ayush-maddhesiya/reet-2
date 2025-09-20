@@ -43,10 +43,11 @@ export default function Electrical() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Electrical Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Electrical Services</h2>
           <p className="text-lg text-gray-600">
-            Our comprehensive electrical services are designed to meet the diverse needs of our clients, from lighting
-            installations to industrial wiring and maintenance.
+            Our comprehensive electrical services are designed to meet the diverse needs of our clients.
+            We create lighting layouts, manage installations and wiring systems, and provide hassle-free ongoing maintenance.
+            In addition, we offer efficient lighting solutions and manufacture high-quality electrical panels to ensure seamless performance.
           </p>
         </div>
 
