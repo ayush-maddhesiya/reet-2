@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button"
 import { useInView } from "@/hooks/use-in-view"
 
-export default function lightingmanufacturers() {
+export default function LightingManufacturers() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, threshold: 0.1 })
 
@@ -53,7 +53,7 @@ export default function lightingmanufacturers() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Panel Manufacturing</h2>
           <p className="text-lg text-gray-600">
-            Reet Associates specializes in custom Ligting manufacturing, delivering high-quality solutions
+            Reet Associates specializes in custom Lighting manufacturing, delivering high-quality solutions
             tailored to your specific requirements.
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function lightingmanufacturers() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {panels.map((lighting, index) => (
+          {lighting.map((lighting, index) => (
             <Card
               key={index}
               className={`overflow-hidden transition-all duration-700 delay-${index * 100} ${
@@ -129,16 +129,16 @@ export default function lightingmanufacturers() {
             >
               <div className="h-48 overflow-hidden">
                 <img
-                  src={panel.image || "/placeholder.svg"}
-                  alt={panel.name}
+                  src={lighting.image || "/placeholder.svg"}
+                  alt={lighting.name}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <CardHeader className="pb-2">
-                <CardTitle className="text-xl font-bold">{panel.name}</CardTitle>
+                <CardTitle className="text-xl font-bold">{lighting.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-gray-600">{panel.description}</CardDescription>
+                <CardDescription className="text-gray-600">{lighting.description}</CardDescription>
               </CardContent>
               <CardFooter>
                 <Button variant="ghost" className="p-0 h-auto text-gray-800 hover:text-gray-600 hover:bg-transparent text-yellow-50">
