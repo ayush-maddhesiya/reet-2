@@ -60,7 +60,7 @@ export default function Home() {
       </div>
 
       <div ref={lightingRef} id="lighting">
-        <LightingManufacturing />
+        <LightingManufacturers />
       </div>
       
       {/* <div ref={governmentRef} id="government">
