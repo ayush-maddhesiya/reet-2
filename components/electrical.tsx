@@ -14,7 +14,7 @@ export default function Electrical() {
       title: "Electrical Consultant & Service Provider",
       description:
         "Expert electrical solutions for industrial, commercial, and residential projects—built on safety, efficiency, and reliability.",
-       icon: <idea className="h-10 w-10 text-gray-800" />,
+       icon:<Idea className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Lighting Manufacturers & Suppliers",
