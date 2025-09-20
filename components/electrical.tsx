@@ -11,21 +11,21 @@ export default function Electrical() {
 
   const services = [
     {
-      title: "Electrical consultant & Service provider",
+      title: "Electrical Consultant & Service Provider",
       description:
         "Expert electrical solutions for industrial, commercial, and residential projects—built on safety, efficiency, and reliability.",
-      icon: <Lightbulb className="h-10 w-10 text-gray-800" />,
+       icon: <idea className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Lighting Manufacturers & Suppliers",
       description: "Manufacturers & suppliers of advanced lighting solutions for commercial, industrial, and residential projects.",
-      icon: <Factory className="h-10 w-10 text-gray-800" />,
+      icon: <Lightbulb className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Electrical Panel Manufacturers",
       description:
         "Leading Electrical Panel Manufacturers with Expert Technical Support and Reliable Solutions.",
-      icon: <Wrench className="h-10 w-10 text-gray-800" />,
+      icon: <Factory className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Maintenance and Support",
