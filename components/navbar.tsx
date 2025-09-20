@@ -56,7 +56,7 @@ export default function Navbar({ electricalRef, governmentRef, lightref , panelR
             onClick={() => scrollToSection(electricalRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
-            Electrical
+            Electrical Solution
           </button>
           {/* <button
             onClick={() => scrollToSection(governmentRef)}
@@ -105,7 +105,7 @@ export default function Navbar({ electricalRef, governmentRef, lightref , panelR
                 onClick={() => scrollToSection(electricalRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
-                Electrical
+                Electrical Solution
               </button>
               {/* <button
                 onClick={() => scrollToSection(governmentRef)}
