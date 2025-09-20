@@ -12,17 +12,17 @@ export default function lightingmanufacturers() {
 
   const panels = [
     {
-      name: "Industrial Control Panels",
+      name: "Indoor Lighting",
       description: "Custom-designed control panels for industrial automation and process control applications.",
       image: "https://imgs.search.brave.com/BSDRz9iKR2IikWs-ClHJp6DG9A__mMkUlitp5uOazKQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA0LzA0LzUy/LzM2MF9GXzExMDQw/NDUyOTJfRk9WcEZX/bHM4SDFJOWhETW9S/dHJ3cmV4alNqR2xQ/TnYuanBn",
     },
     {
-      name: "Power Distribution Panels",
+      name: "Outdoor Lighting",
       description: "Reliable power distribution panels for commercial and industrial facilities.",
       image: "https://imgs.search.brave.com/EoNtgkaCo0u4gIs22lOKdU7jNonRFGo83Lc_kOZZo8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZHluYW1pY3JlcC5j/b20vaHMtZnMvaHVi/ZnMvRWxlY3RyaWNh/bCUyMFBvd2VyJTIw/UGFuZWxfUERVLTEu/anBlZz93aWR0aD00/NDkmaGVpZ2h0PTMw/MCZuYW1lPUVsZWN0/cmljYWwlMjBQb3dl/ciUyMFBhbmVsX1BE/VS0xLmpwZWc",
     },
     {
-      name: "Motor Control Centers",
+      name: "Pole Lighting",
       description: "Centralized control and distribution of power for motors in industrial settings.",
       image: "https://imgs.search.brave.com/qQUAy0Bn6OT2t8ZYGFc2vVVK3z6_ehk7VgLnwytXDQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmV4ZXJ0aGVybS5j/b20vaHMtZnMvaHVi/ZnMvRXhlcnRoZXJt/JTIwMjAyMy9JbWFn/ZS9zaHV0dGVyc3Rv/Y2tfMTU3OTkxMDk4/OS5qcGc_d2lkdGg9/MjAwMCZuYW1lPXNo/dXR0ZXJzdG9ja18x/NTc5OTEwOTg5Lmpw/Zw?height=300&width=400",
     },
