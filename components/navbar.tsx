@@ -9,12 +9,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 interface NavbarProps {
   electricalRef: RefObject<HTMLDivElement>
   governmentRef: RefObject<HTMLDivElement>
+  lightRef: RefObject<HTMLDivElement>
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
   aboutRef: RefObject<HTMLDivElement>
 }
 
-export default function Navbar({ electricalRef, governmentRef, panelRef, clientsRef, aboutRef }: NavbarProps) {
+export default function Navbar({ electricalRef, governmentRef, lightref , panelRef, clientsRef, aboutRef }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -67,6 +68,12 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
             onClick={() => scrollToSection(panelRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
+            Lightinh Manufacturers
+          </button>
+          <button
+            onClick={() => scrollToSection(clientsRef)}
+            className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
+          >
             Panel Manufacturing
           </button>
           <button
@@ -108,6 +115,12 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
               </button> */}
               <button
                 onClick={() => scrollToSection(panelRef)}
+                className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
+              >
+                Lighting Manufacturers
+              </button>
+              <button
+                onClick={() => scrollToSection(clientsRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
                 Panel Manufacturing
