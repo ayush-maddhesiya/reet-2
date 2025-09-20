@@ -11,26 +11,26 @@ export default function Electrical() {
 
   const services = [
     {
-      title: "Lighting Installations",
+      title: "Electrical consultant & Service provider",
       description:
-        "Professional installation of lighting systems for commercial, industrial, and residential properties.",
+        "Expert electrical solutions for industrial, commercial, and residential projects—built on safety, efficiency, and reliability.",
       icon: <Lightbulb className="h-10 w-10 text-gray-800" />,
     },
     {
-      title: "Industrial Wiring",
-      description: "Comprehensive industrial wiring solutions designed for safety, efficiency, and reliability.",
+      title: "Lighting Manufacturers & Suppliers",
+      description: "Manufacturers & suppliers of advanced lighting solutions for commercial, industrial, and residential projects.",
       icon: <Factory className="h-10 w-10 text-gray-800" />,
     },
     {
-      title: "Commercial Electrical Solutions",
+      title: "Electrical Panel Manufacturers",
       description:
-        "Tailored electrical solutions for businesses of all sizes, from small offices to large commercial complexes.",
+        "Leading Electrical Panel Manufacturers with Expert Technical Support and Reliable Solutions.",
       icon: <Wrench className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Maintenance and Support",
       description:
-        "Ongoing maintenance and 24/7 support services to ensure your electrical systems operate at peak performance.",
+        "24/7 service and proactive care to keep your electrical systems efficient and trouble-free.",
       icon: <PhoneCall className="h-10 w-10 text-gray-800" />,
     },
   ]
