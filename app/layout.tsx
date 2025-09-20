@@ -7,9 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Reet Associates - Electrical Solutions & Panel Manufacturing",
+  title: "Reet Associates - Electrical Solutions, Lighting & Panel Manufacturers",
   description:
-    "Professional electrical services, panel manufacturing, and government project solutions with excellence and reliability.",
+    "Professional Electrical Consultant & Service Provider, Light Manufacturers & Panel Manufacturers in Industrial, Commerical and Residential Projects With Technical Support and Reliable Solutions.",
     generator: 'v0.dev'
 }
 
