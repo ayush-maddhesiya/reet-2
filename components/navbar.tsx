@@ -65,13 +65,13 @@ export default function Navbar({ electricalRef, governmentRef, lightref , panelR
             Government Projects
           </button> */}
           <button
-            onClick={() => scrollToSection(panelRef)}
+            onClick={() => scrollToSection(lightRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
             Lighting Manufacturers
           </button>
           <button
-            onClick={() => scrollToSection(clientsRef)}
+            onClick={() => scrollToSection(panelRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
             Panel Manufacturing
@@ -114,16 +114,16 @@ export default function Navbar({ electricalRef, governmentRef, lightref , panelR
                 Government Projects
               </button> */}
               <button
-                onClick={() => scrollToSection(panelRef)}
+                onClick={() => scrollToSection(lightRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
                 Lighting Manufacturers
               </button>
               <button
-                onClick={() => scrollToSection(clientsRef)}
+                onClick={() => scrollToSection(panelRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
-                Panel Manufacturing
+                Panel Manufacturers
               </button>
               <button
                 onClick={() => scrollToSection(clientsRef)}
