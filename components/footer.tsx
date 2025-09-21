@@ -81,7 +81,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#panel" className="text-gray-300 hover:text-white transition-colors">
-                  Panel Manufacturing
+                  Panel Manufacturers
                 </Link>
               </li>
               <li>
