@@ -15,17 +15,20 @@ interface NavbarProps {
   aboutRef: RefObject<HTMLDivElement>
 }
 
-export default function Navbar({ electricalRef, governmentRef, lightingRef, panelRef, clientsRef, aboutRef }: NavbarProps) {
+export default function Navbar({
+  electricalRef,
+  governmentRef,
+  lightingRef,
+  panelRef,
+  clientsRef,
+  aboutRef,
+}: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
+      setIsScrolled(window.scrollY > 10)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -58,7 +61,7 @@ export default function Navbar({ electricalRef, governmentRef, lightingRef, pane
           >
             Electrical Solution
           </button>
-          {/* <button
+          <button
             onClick={() => scrollToSection(governmentRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
@@ -107,12 +110,12 @@ export default function Navbar({ electricalRef, governmentRef, lightingRef, pane
               >
                 Electrical Solution
               </button>
-              {/* <button
+              <button
                 onClick={() => scrollToSection(governmentRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
                 Government Projects
-              </button> */}
+              </button>
               <button
                 onClick={() => scrollToSection(lightingRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
