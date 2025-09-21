@@ -11,26 +11,26 @@ export default function Electrical() {
 
   const services = [
     {
-      title: "Lighting Installations",
+      title: "Electrical Consultant & Service Provider",
       description:
-        "Professional installation of lighting systems for commercial, industrial, and residential properties.",
+        "Expert electrical solutions for industrial, commercial, and residential projects—built on safety, efficiency, and reliability.",
+       icon:<Wrench className="h-10 w-10 text-gray-800" />,
+    },
+    {
+      title: "Lighting Manufacturers & Suppliers",
+      description: "Manufacturers & suppliers of advanced lighting solutions for commercial, industrial, and residential projects.",
       icon: <Lightbulb className="h-10 w-10 text-gray-800" />,
     },
     {
-      title: "Industrial Wiring",
-      description: "Comprehensive industrial wiring solutions designed for safety, efficiency, and reliability.",
-      icon: <Factory className="h-10 w-10 text-gray-800" />,
-    },
-    {
-      title: "Commercial Electrical Solutions",
+      title: "Electrical Panel Manufacturers",
       description:
-        "Tailored electrical solutions for businesses of all sizes, from small offices to large commercial complexes.",
-      icon: <Wrench className="h-10 w-10 text-gray-800" />,
+        "Leading Electrical Panel Manufacturers with Expert Technical Support and Reliable Solutions.",
+      icon: <Factory className="h-10 w-10 text-gray-800" />,
     },
     {
       title: "Maintenance and Support",
       description:
-        "Ongoing maintenance and 24/7 support services to ensure your electrical systems operate at peak performance.",
+        "24/7 service and proactive care to keep your electrical systems efficient and trouble-free.",
       icon: <PhoneCall className="h-10 w-10 text-gray-800" />,
     },
   ]
@@ -43,10 +43,11 @@ export default function Electrical() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Electrical Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Electrical Services</h2>
           <p className="text-lg text-gray-600">
-            Our comprehensive electrical services are designed to meet the diverse needs of our clients, from lighting
-            installations to industrial wiring and maintenance.
+            Our comprehensive electrical services are designed to meet the diverse needs of our clients.
+            We create lighting layouts, manage installations and wiring systems, and provide hassle-free ongoing maintenance.
+            In addition, we offer efficient lighting solutions and manufacture high-quality electrical panels to ensure seamless performance.
           </p>
         </div>
 
@@ -84,25 +85,26 @@ export default function Electrical() {
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Quality Materials</h4>
-              <p className="text-gray-600">We use only high-quality materials that meet industry standards.</p>
+              <p className="text-gray-600">We use only premium materials that meet the highest industry standards.
+              </p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Timely Delivery</h4>
-              <p className="text-gray-600">We commit to completing projects on time without compromising quality.</p>
+              <p className="text-gray-600">We are committed to completing projects on schedule without compromising quality.</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Cost-Effective Solutions</h4>
               <p className="text-gray-600">
-                Our solutions are designed to be cost-effective without sacrificing quality.
+                We deliver solutions that are cost-effective without compromising on quality.
               </p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">24/7 Support</h4>
-              <p className="text-gray-600">We provide round-the-clock support for emergencies and maintenance.</p>
+              <p className="text-gray-600">We provide round-the-clock assistance for emergencies and ongoing maintenance.</p>
             </div>
             <div className="space-y-2">
               <h4 className="text-lg font-semibold text-gray-800">Customized Approach</h4>
-              <p className="text-gray-600">We tailor our services to meet the specific needs of each client.</p>
+              <p className="text-gray-600">We tailor our services to meet the unique needs of each client.</p>
             </div>
           </div>
         </div>

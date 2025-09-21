@@ -9,12 +9,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 interface NavbarProps {
   electricalRef: RefObject<HTMLDivElement>
   governmentRef: RefObject<HTMLDivElement>
+  lightRef: RefObject<HTMLDivElement>
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
   aboutRef: RefObject<HTMLDivElement>
 }
 
-export default function Navbar({ electricalRef, governmentRef, panelRef, clientsRef, aboutRef }: NavbarProps) {
+export default function Navbar({ electricalRef, governmentRef, lightref , panelRef, clientsRef, aboutRef }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -55,7 +56,7 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
             onClick={() => scrollToSection(electricalRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
-            Electrical
+            Electrical Solution
           </button>
           {/* <button
             onClick={() => scrollToSection(governmentRef)}
@@ -63,6 +64,12 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
           >
             Government Projects
           </button> */}
+          <button
+            onClick={() => scrollToSection(lightRef)}
+            className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
+          >
+            Lighting Manufacturers
+          </button>
           <button
             onClick={() => scrollToSection(panelRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
@@ -98,7 +105,7 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
                 onClick={() => scrollToSection(electricalRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
-                Electrical
+                Electrical Solution
               </button>
               {/* <button
                 onClick={() => scrollToSection(governmentRef)}
@@ -107,10 +114,16 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
                 Government Projects
               </button> */}
               <button
+                onClick={() => scrollToSection(lightRef)}
+                className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
+              >
+                Lighting Manufacturers
+              </button>
+              <button
                 onClick={() => scrollToSection(panelRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
-                Panel Manufacturing
+                Panel Manufacturers
               </button>
               <button
                 onClick={() => scrollToSection(clientsRef)}
