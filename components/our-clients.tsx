@@ -105,7 +105,7 @@ export default function OurClients() {
                 Electrical Services
               </TabsTrigger>
               <TabsTrigger value="panel" className="text-sm md:text-base">
-                Panel Manufacturing
+                Panel Manufacturers
               </TabsTrigger>
               {/* <TabsTrigger value="government" className="text-sm md:text-base">
                 Government Projects
