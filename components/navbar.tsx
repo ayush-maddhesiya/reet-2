@@ -81,7 +81,7 @@ export default function Navbar({ electricalRef, governmentRef, panelRef, clients
           >
             About Us
           </button>
-          <Button className="bg-gray-900 hover:bg-gray-800">Contact Us</Button>
+          <Button className="bg-gray-300 hover:bg-white">Contact Us</Button>
         </nav>
 
         {/* Mobile Navigation */}

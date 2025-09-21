@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+          <div className="space-y-6">
             <h3 className="text-xl font-bold">Reet Associates</h3>
             <p className="text-gray-300">
               Providing comprehensive electrical solutions with excellence and reliability since 2021.
@@ -125,7 +125,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-xl font-bold">Newsletter</h3>
             <p className="text-gray-300">Subscribe to our newsletter for the latest updates and offers.</p>
             <div className="flex flex-col space-y-2">
@@ -136,7 +136,7 @@ export default function Footer() {
               />
               <Button className="bg-white text-gray-900 hover:bg-gray-200">Subscribe</Button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
