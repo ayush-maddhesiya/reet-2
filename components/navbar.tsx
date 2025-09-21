@@ -15,7 +15,7 @@ interface NavbarProps {
   aboutRef: RefObject<HTMLDivElement>
 }
 
-export default function Navbar({ electricalRef, governmentRef, lightref , panelRef, clientsRef, aboutRef }: NavbarProps) {
+export default function Navbar({ electricalRef, governmentRef, lightRef , panelRef, clientsRef, aboutRef }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -74,7 +74,7 @@ export default function Navbar({ electricalRef, governmentRef, lightref , panelR
             onClick={() => scrollToSection(panelRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
-            Panel Manufacturing
+            Panel Manufacturers
           </button>
           <button
             onClick={() => scrollToSection(clientsRef)}
