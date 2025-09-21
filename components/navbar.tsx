@@ -9,13 +9,13 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 interface NavbarProps {
   electricalRef: RefObject<HTMLDivElement>
   governmentRef: RefObject<HTMLDivElement>
-  lightRef: RefObject<HTMLDivElement>
+  lightingRef: RefObject<HTMLDivElement>
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
   aboutRef: RefObject<HTMLDivElement>
 }
 
-export default function Navbar({ electricalRef, governmentRef, lightRef , panelRef, clientsRef, aboutRef }: NavbarProps) {
+export default function Navbar({ electricalRef, governmentRef, lightingRef , panelRef, clientsRef, aboutRef }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -65,7 +65,7 @@ export default function Navbar({ electricalRef, governmentRef, lightRef , panelR
             Government Projects
           </button> */}
           <button
-            onClick={() => scrollToSection(lightRef)}
+            onClick={() => scrollToSection(lightingRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
             Lighting Manufacturers
@@ -114,7 +114,7 @@ export default function Navbar({ electricalRef, governmentRef, lightRef , panelR
                 Government Projects
               </button> */}
               <button
-                onClick={() => scrollToSection(lightRef)}
+                onClick={() => scrollToSection(lightingRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
                 Lighting Manufacturers
