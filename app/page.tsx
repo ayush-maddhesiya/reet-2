@@ -7,7 +7,7 @@ import Hero from "@/components/hero"
 import Electrical from "@/components/electrical"
 import GovernmentProjects from "@/components/government-projects"
 import LightingManufacturers from "@/components/lighting-manufacturers"
-import PanelManufacturing from "@/components/panel-manufacturing"
+import PanelManufacturers from "@/components/panel-manufacturers"
 import OurClients from "@/components/our-clients"
 import AboutUs from "@/components/about-us"
 import Footer from "@/components/footer"
@@ -68,7 +68,7 @@ export default function Home() {
       </div> */}
 
       <div ref={panelRef} id="panel">
-        <PanelManufacturing />
+        <PanelManufacturers />
       </div>
 
       <div ref={clientsRef} id="clients">
