@@ -5,7 +5,6 @@ import { ArrowUp } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Hero from "@/components/hero"
 import Electrical from "@/components/electrical"
-import GovernmentProjects from "@/components/government-projects"
 import LightingManufacturers from "@/components/lighting-manufacturers"
 import PanelManufacturers from "@/components/panel-manufacturers"
 import OurClients from "@/components/our-clients"
@@ -18,8 +17,7 @@ export default function Home() {
 
   // Refs for each section for navigation
   const electricalRef = useRef<HTMLDivElement>(null)
-  const governmentRef = useRef<HTMLDivElement>(null)
-  const lightingRef = useRef<HTMLDivElement>(null)
+   const lightingRef = useRef<HTMLDivElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
   const clientsRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
@@ -46,7 +44,6 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Navbar
         electricalRef={electricalRef}
-        // governmentRef={governmentRef}
         lightingRef={lightingRef}
         panelRef={panelRef}
         clientsRef={clientsRef}
@@ -63,10 +60,6 @@ export default function Home() {
         <LightingManufacturers />
       </div>
       
-      {/* <div ref={governmentRef} id="government">
-        <GovernmentProjects />
-      </div> */}
-
       <div ref={panelRef} id="panel">
         <PanelManufacturers />
       </div>
