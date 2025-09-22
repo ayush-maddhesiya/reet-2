@@ -8,10 +8,20 @@ export default function OurClients() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, threshold: 0.1 })
 
-  const clients = Array.from({ length: 50 }, (_, i) => ({
-    name: `Client ${i + 1}`,
-    logo: `/upload/client-${i + 1}.png`,
-  }))
+    const clients = [
+    { name: "Systango Technologies Limited", logo: "/upload/Systango-Technologies-Limited.png" },
+    { name: "Skyline Office Towers", logo: "/upload/skyline-office-towers.png" },
+    { name: "Grand Hotel Chain", logo: "/upload/grand-hotel-chain.png" },
+    { name: "Retail Plaza", logo: "/upload/retail-plaza.png" },
+    { name: "Industrial Manufacturing Co.", logo: "/upload/industrial-manufacturing.png" },
+    { name: "Chemical Processing Plant", logo: "/upload/chemical-plant.png" },
+    { name: "Automotive Assembly", logo: "/upload/automotive-assembly.png" },
+    { name: "Food Processing Facility", logo: "/upload/food-processing.png" },
+    { name: "Municipal Corporation", logo: "/upload/municipal-corporation.png" },
+    { name: "State Power Department", logo: "/upload/state-power.png" },
+    { name: "Defense Research Lab", logo: "/upload/defense-lab.png" },
+    { name: "Public Transportation Authority", logo: "/upload/public-transport.png" },
+   ]
 
   return (
     <section ref={sectionRef} className="py-16 md:py-24 bg-white">
