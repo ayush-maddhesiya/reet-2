@@ -26,7 +26,7 @@ export default function Panelmanufacturers() {
       description: "Centralized control and distribution of power for motors Like VFD Panel, Soft Starter Panel and Pump Starter Panel.",
       image: "https://imgs.search.brave.com/qQUAy0Bn6OT2t8ZYGFc2vVVK3z6_ehk7VgLnwytXDQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmV4ZXJ0aGVybS5j/b20vaHMtZnMvaHVi/ZnMvRXhlcnRoZXJt/JTIwMjAyMy9JbWFn/ZS9zaHV0dGVyc3Rv/Y2tfMTU3OTkxMDk4/OS5qcGc_d2lkdGg9/MjAwMCZuYW1lPXNo/dXR0ZXJzdG9ja18x/NTc5OTEwOTg5Lmpw/Zw?height=300&width=400",
     },
-   ]
+   ]]
 
   return (
     <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50">
@@ -42,7 +42,7 @@ export default function Panelmanufacturers() {
             tailored to your specific requirements.
           </p>
         </div>
-
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div
             className={`space-y-6 transition-all duration-700 ${
@@ -129,5 +129,8 @@ export default function Panelmanufacturers() {
                 </Button>
               </CardFooter>
             </Card>
-          ))}
+          
+    )
+    )
+    }
        
