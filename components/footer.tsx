@@ -83,6 +83,11 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* Bottom Line */}
+        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+          © {new Date().getFullYear()} Reet Associates. All rights reserved.
+        </div>
       </div>
     </footer>
   )
