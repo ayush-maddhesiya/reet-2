@@ -26,21 +26,30 @@ export default function Lightingmanufacturers() {
       description:
         "Energy-efficient indoor lighting solutions designed for offices, homes, and commercial spaces.",
       image:
-        "https://imgs.search.brave.com/BSDRz9iKR2IikWs-ClHJp6DG9A__mMkUlitp5uOazKQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA0LzA0LzUy/LzM2MF9GXzExMDQw/NDUyOTJfRk9WcEZX/bHM4SDFJOWhETW9S/dHJ3cmV4alNqR2xQ/TnYuanBn",
+        src="/upload/indoor.jpg"
+        alt="Indoor Lighting"
+        width={400}
+        height={300}
     },
     {
       name: "Outdoor Lighting",
       description:
         "Durable outdoor lighting systems built for reliability and performance in all weather conditions.",
       image:
-        "https://imgs.search.brave.com/EoNtgkaCo0u4gIs22lOKdU7jNonRFGo83Lc_kOZZo8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZHluYW1pY3JlcC5j/b20vaHMtZnMvaHVi/ZnMvRWxlY3RyaWNh/bCUyMFBvd2VyJTIw/UGFuZWxfUERVLTEu/anBlZz93aWR0aD00/NDkmaGVpZ2h0PTMw/MCZuYW1lPUVsZWN0/cmljYWwlMjBQb3dl/ciUyMFBhbmVsX1BE/VS0xLmpwZWc",
+       src="/upload/outdoor.jpg"
+        alt="Outdoor Lighting"
+        width={400}
+        height={300}
     },
     {
       name: "Pole Lighting",
       description:
         "High-performance pole lighting solutions ideal for streets, highways, and industrial areas.",
       image:
-        "https://imgs.search.brave.com/qQUAy0Bn6OT2t8ZYGFc2vVVK3z6_ehk7VgLnwytXDQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmV4ZXJ0aGVybS5j/b20vaHMtZnMvaHVi/ZnMvRXhlcnRoZXJt/JTIwMjAyMy9JbWFn/ZS9zaHV0dGVyc3Rv/Y2tfMTU3OTkxMDk4/OS5qcGc_d2lkdGg9/MjAwMCZuYW1lPXNo/dXR0ZXJzdG9ja18x/NTc5OTEwOTg5Lmpw/Zw?height=300&width=400",
+        src="/upload/pole.jpg"
+        alt="Pole Lighting"
+        width={400}
+        height={300}
     },
   ]
 
