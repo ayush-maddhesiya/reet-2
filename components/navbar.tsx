@@ -60,7 +60,7 @@ export default function Navbar({
             Electrical Solution
           </button>
           <button
-            onClick={() => scrollToSection(governmentRef)}
+            onClick={() => scrollToSection(lightingRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
             Lighting Manufacturers
@@ -103,7 +103,7 @@ export default function Navbar({
                 Electrical Solution
               </button>
               <button
-                onClick={() => scrollToSection(governmentRef)}
+                onClick={() => scrollToSection(lightingRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
                 Lighting Manufacturers
