@@ -11,7 +11,7 @@ interface NavbarProps {
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
   aboutRef: RefObject<HTMLDivElement>
-  contactRef: RefObject<HTMLDivElement> // added contact section
+  contactRef: RefObject<HTMLDivElement> // contact section
 }
 
 export default function Navbar({
@@ -20,7 +20,7 @@ export default function Navbar({
   panelRef,
   clientsRef,
   aboutRef,
-  contactRef, // added contact section
+  contactRef,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -49,7 +49,8 @@ export default function Navbar({
     >
       <div className="container flex items-center justify-between">
         <div className="flex items-center space-x-2">
-        <img src="/logo.gif" alt="Reet Associates" className="h-10 w-auto" />
+          {/* Logo image: replace path with your desired format (e.g., PNG/WebP/GIF) */}
+          <img src="/assets/logo.webp" alt="Reet Associates" className="h-10 w-auto" />
         </div>
 
         {/* Desktop Navigation */}
@@ -84,7 +85,10 @@ export default function Navbar({
           >
             About Us
           </button>
-          <Button onClick={() => scrollToSection(contactRef)} className="bg-gray-300 hover:bg-white">
+          <Button
+            onClick={() => scrollToSection(contactRef)}
+            className="bg-gray-300 hover:bg-white"
+          >
             Contact Us
           </Button>
         </nav>
@@ -129,12 +133,12 @@ export default function Navbar({
               >
                 About Us
               </button>
-              <Button
+              <button
                 onClick={() => scrollToSection(contactRef)}
-                className="w-full bg-gray-900 hover:bg-gray-800"
+                className="w-full bg-gray-900 text-white hover:bg-gray-800"
               >
                 Contact Us
-              </Button>
+              </button>
             </nav>
           </SheetContent>
         </Sheet>
