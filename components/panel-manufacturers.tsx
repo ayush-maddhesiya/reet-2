@@ -13,35 +13,20 @@ export default function Panelmanufacturers() {
   const panels = [
     {
       name: "Industrial Control Panels",
-      description: "Custom-designed control panels for industrial automation and process control applications.",
+      description: "Custom-designed control panels like PCC Panel, SS Panel, MCC Panel, APFCR Panel and PLC Panel.",
       image: "https://imgs.search.brave.com/BSDRz9iKR2IikWs-ClHJp6DG9A__mMkUlitp5uOazKQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA0LzA0LzUy/LzM2MF9GXzExMDQw/NDUyOTJfRk9WcEZX/bHM4SDFJOWhETW9S/dHJ3cmV4alNqR2xQ/TnYuanBn",
     },
     {
       name: "Power Distribution Panels",
-      description: "Reliable power distribution panels for commercial and industrial facilities.",
+      description: "Reliable power distribution panels for commercial and industrial facilities like Meter Panel,  D.G. Synchronization Panel and AMF Panel.",
       image: "https://imgs.search.brave.com/EoNtgkaCo0u4gIs22lOKdU7jNonRFGo83Lc_kOZZo8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZHluYW1pY3JlcC5j/b20vaHMtZnMvaHVi/ZnMvRWxlY3RyaWNh/bCUyMFBvd2VyJTIw/UGFuZWxfUERVLTEu/anBlZz93aWR0aD00/NDkmaGVpZ2h0PTMw/MCZuYW1lPUVsZWN0/cmljYWwlMjBQb3dl/ciUyMFBhbmVsX1BE/VS0xLmpwZWc",
     },
     {
-      name: "Motor Control Centers",
-      description: "Centralized control and distribution of power for motors in industrial settings.",
+      name: "Motor Control Panels",
+      description: "Centralized control and distribution of power for motors Like VFD Panel, Soft Starter Panel and Pump Starter Panel.",
       image: "https://imgs.search.brave.com/qQUAy0Bn6OT2t8ZYGFc2vVVK3z6_ehk7VgLnwytXDQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmV4ZXJ0aGVybS5j/b20vaHMtZnMvaHVi/ZnMvRXhlcnRoZXJt/JTIwMjAyMy9JbWFn/ZS9zaHV0dGVyc3Rv/Y2tfMTU3OTkxMDk4/OS5qcGc_d2lkdGg9/MjAwMCZuYW1lPXNo/dXR0ZXJzdG9ja18x/NTc5OTEwOTg5Lmpw/Zw?height=300&width=400",
     },
-    // {
-    //   name: "Lighting Control Panels",
-    //   description: "Sophisticated lighting control systems for energy efficiency and automation.",
-    //   image: "/placeholder.svg?height=300&width=400",
-    // },
-    // {
-    //   name: "PLC Panels",
-    //   description: "Programmable Logic Controller panels for automated industrial processes.",
-    //   image: "/placeholder.svg?height=300&width=400",
-    // },
-    // {
-    //   name: "HVAC Control Panels",
-    //   description: "Specialized panels for heating, ventilation, and air conditioning control systems.",
-    //   image: "/placeholder.svg?height=300&width=400",
-    // },
-  ]
+   ]
 
   return (
     <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50">
@@ -51,7 +36,7 @@ export default function Panelmanufacturers() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Panel manufacturers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Panel Manufacturers</h2>
           <p className="text-lg text-gray-600">
             Reet Associates specializes in custom electrical panel manufacturing, delivering high-quality solutions
             tailored to your specific requirements.
@@ -102,9 +87,7 @@ export default function Panelmanufacturers() {
                 <span className="text-gray-700">On-time delivery and installation support</span>
               </li>
             </ul>
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white">
-              Learn About Our Process <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            }
           </div>
           <div
             className={`relative h-[400px] rounded-lg overflow-hidden shadow-xl transition-all duration-700 ${
@@ -147,12 +130,4 @@ export default function Panelmanufacturers() {
               </CardFooter>
             </Card>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <Button className="bg-gray-900 hover:bg-gray-700 text-white">Explore Our Panel Manufacturing</Button>
-        </div>
-      </div>
-    </section>
-  )
-}
+       
