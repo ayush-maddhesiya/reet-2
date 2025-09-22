@@ -50,7 +50,7 @@ export default function Navbar({
       <div className="container flex items-center justify-between">
         <div className="flex items-center space-x-2">
           {/* Logo image: replace path with your desired format (e.g., PNG/WebP/GIF) */}
-          <img src="/assets/logo.webp" alt="Reet Associates" className="h-10 w-auto" />
+          <img src="/upload/logo.webp" alt="Reet Associates" className="h-10 w-auto" />
         </div>
 
         {/* Desktop Navigation */}
