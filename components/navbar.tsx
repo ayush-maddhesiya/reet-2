@@ -8,7 +8,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 interface NavbarProps {
   electricalRef: RefObject<HTMLDivElement>
-  governmentRef: RefObject<HTMLDivElement>
   lightingRef: RefObject<HTMLDivElement>
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
@@ -17,7 +16,6 @@ interface NavbarProps {
 
 export default function Navbar({
   electricalRef,
-  governmentRef,
   lightingRef,
   panelRef,
   clientsRef,
@@ -65,12 +63,6 @@ export default function Navbar({
             onClick={() => scrollToSection(governmentRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
-            Government Projects
-          </button>
-          <button
-            onClick={() => scrollToSection(lightingRef)}
-            className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
-          >
             Lighting Manufacturers
           </button>
           <button
@@ -112,12 +104,6 @@ export default function Navbar({
               </button>
               <button
                 onClick={() => scrollToSection(governmentRef)}
-                className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
-              >
-                Government Projects
-              </button>
-              <button
-                onClick={() => scrollToSection(lightingRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
                 Lighting Manufacturers
