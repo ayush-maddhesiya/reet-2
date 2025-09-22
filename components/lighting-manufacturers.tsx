@@ -12,12 +12,12 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { useInView } from "@/hooks/use-in-view"
+import Image from "next/image"
 
 export default function Lightingmanufacturers() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, threshold: 0.1 })
 
-  // Predefined animation delays (safe for Tailwind JIT)
   const delays = ["delay-0", "delay-100", "delay-200", "delay-300"]
 
   const lighting = [
@@ -25,31 +25,22 @@ export default function Lightingmanufacturers() {
       name: "Indoor Lighting",
       description:
         "Energy-efficient indoor lighting solutions designed for offices, homes, and commercial spaces.",
-      image:
-        src="/upload/indoor.jpg"
-        alt="Indoor Lighting"
-        width={400}
-        height={300}
+      image: "/upload/indoor.jpg",
+      alt: "Indoor Lighting",
     },
     {
       name: "Outdoor Lighting",
       description:
         "Durable outdoor lighting systems built for reliability and performance in all weather conditions.",
-      image:
-       src="/upload/outdoor.jpg"
-        alt="Outdoor Lighting"
-        width={400}
-        height={300}
+      image: "/upload/outdoor.jpg",
+      alt: "Outdoor Lighting",
     },
     {
       name: "Pole Lighting",
       description:
         "High-performance pole lighting solutions ideal for streets, highways, and industrial areas.",
-      image:
-        src="/upload/pole.jpg"
-        alt="Pole Lighting"
-        width={400}
-        height={300}
+      image: "/upload/pole.jpg",
+      alt: "Pole Lighting",
     },
   ]
 
@@ -114,10 +105,11 @@ export default function Lightingmanufacturers() {
                 : "opacity-0 translate-x-10"
             }`}
           >
-            <img
-              src="https://imgs.search.brave.com/1i0V5Fcw8T200qa2qp04svBYw1ixb5FCS0J5KUBCq1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pZXZw/b3dlci5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDQv/VG9wLUVsZWN0cmlj/YWwtQ29udHJvbC1Q/YW5lbC1NYW51ZmFj/dHVyZXJzLmpwZw"
+            <Image
+              src="/upload/facility.jpg"
               alt="Lighting manufacturing facility"
-              className="object-cover w-full h-full"
+              fill
+              className="object-cover"
             />
           </div>
         </div>
@@ -133,11 +125,12 @@ export default function Lightingmanufacturers() {
                   : "opacity-0 translate-y-10"
               } ${delays[index % delays.length]} hover:shadow-lg border-gray-200`}
             >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={item.image || "/placeholder.svg"}
-                  alt={`${item.name} product`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              <div className="h-48 relative overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <CardHeader className="pb-2">
@@ -163,4 +156,3 @@ export default function Lightingmanufacturers() {
     </section>
   )
 }
-
