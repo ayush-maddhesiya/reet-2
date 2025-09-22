@@ -1,3 +1,5 @@
+"use client"
+
 import { Mail, MapPin, Phone } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -8,16 +10,19 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+          {/* Company Info */}
           <div className="space-y-6">
             <h3 className="text-xl font-bold">Reet Associates</h3>
             <p className="text-gray-300">
               Providing comprehensive electrical solutions with excellence and reliability since 2021.
             </p>
             <div className="flex items-center space-x-4">
+              {/* Social Icons */}
               <a
                 href="#"
                 className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
+                {/* Facebook Icon */}
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -30,6 +35,7 @@ export default function Footer() {
                 href="#"
                 className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
+                {/* Twitter Icon */}
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
@@ -38,6 +44,7 @@ export default function Footer() {
                 href="#"
                 className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
+                {/* Instagram Icon */}
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
@@ -47,20 +54,29 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="mailto:associatesreet@gmail.com"
                 className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
               >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    fillRule="evenodd"
-                    d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-                    clipRule="evenodd"
-                  />
+                <Mail className="h-5 w-5" />
+              </a>
+              <a
+                href="tel:+918109789795"
+                className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
+              >
+                <Phone className="h-5 w-5" />
+              </a>
+              <a
+                href="sms:+918109789795"
+                className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors"
+              >
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M2 4c0-1.105.895-2 2-2h16a2 2 0 012 2v16a2 2 0 01-2 2H6l-4 4V4z" />
                 </svg>
               </a>
             </div>
           </div>
 
+          {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold">Quick Links</h3>
             <ul className="space-y-2">
@@ -69,14 +85,9 @@ export default function Footer() {
                   Electrical Services
                 </Link>
               </li>
-              {/* <li>
-                <Link href="#government" className="text-gray-300 hover:text-white transition-colors">
-                  Government Projects
-                </Link>
-              </li> */}
-               <li>
+              <li>
                 <Link href="#lighting" className="text-gray-300 hover:text-white transition-colors">
-                  Lightng Manufacturers
+                  Lighting Manufacturers
                 </Link>
               </li>
               <li>
@@ -102,8 +113,9 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Address */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Contact Us</h3>
+            <h3 className="text-xl font-bold">Contact Details</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-gray-400" />
@@ -112,35 +124,36 @@ export default function Footer() {
                   Near C-21 Mall, Scheme No 54,<br />
                   Indore, Madhya Pradesh 452010
                 </span>
-
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gray-400" />
-                <span className="text-gray-300">+91 8109789795</span>
+                <a href="tel:+918109789795" className="text-gray-300 hover:text-white">
+                  +91 8109789795
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-gray-400" />
-                <span className="text-gray-300">associatesreet@gmail.com</span>
+                <a href="mailto:associatesreet@gmail.com" className="text-gray-300 hover:text-white">
+                  associatesreet@gmail.com
+                </a>
               </li>
             </ul>
           </div>
-
-          {/* <div className="space-y-4">
-            <h3 className="text-xl font-bold">Newsletter</h3>
-            <p className="text-gray-300">Subscribe to our newsletter for the latest updates and offers.</p>
-            <div className="flex flex-col space-y-2">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-400"
-              />
-              <Button className="bg-white text-gray-900 hover:bg-gray-200">Subscribe</Button>
-            </div>
-          </div> */}
         </div>
 
-        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+        {/* Bottom Contact */}
+        <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400 space-y-2">
           <p>© {new Date().getFullYear()} Reet Associates. All rights reserved.</p>
+          <p>
+            Contact us:{" "}
+            <a href="tel:+918109789795" className="hover:text-white underline">
+              +91 8109789795
+            </a>{" "}
+            |{" "}
+            <a href="mailto:associatesreet@gmail.com" className="hover:text-white underline">
+              associatesreet@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </footer>
