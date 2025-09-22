@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect, type RefObject } from "react"
-import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -12,6 +11,7 @@ interface NavbarProps {
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
   aboutRef: RefObject<HTMLDivElement>
+  contactRef: RefObject<HTMLDivElement> // added contact section
 }
 
 export default function Navbar({
@@ -20,6 +20,7 @@ export default function Navbar({
   panelRef,
   clientsRef,
   aboutRef,
+  contactRef, // added contact section
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -47,9 +48,10 @@ export default function Navbar({
       }`}
     >
       <div className="container flex items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-gray-900">Reet Associates</span>
-        </Link>
+        <div className="flex items-center space-x-2">
+          {/* Replace text logo with GIF */}
+          <img src="/logo.gif" alt="Reet Associates" className="h-10 w-auto" />
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -83,7 +85,9 @@ export default function Navbar({
           >
             About Us
           </button>
-          <Button className="bg-gray-300 hover:bg-white">Contact Us</Button>
+          <Button onClick={() => scrollToSection(contactRef)} className="bg-gray-300 hover:bg-white">
+            Contact Us
+          </Button>
         </nav>
 
         {/* Mobile Navigation */}
@@ -126,7 +130,12 @@ export default function Navbar({
               >
                 About Us
               </button>
-              <Button className="w-full bg-gray-900 hover:bg-gray-800">Contact Us</Button>
+              <Button
+                onClick={() => scrollToSection(contactRef)}
+                className="w-full bg-gray-900 hover:bg-gray-800"
+              >
+                Contact Us
+              </Button>
             </nav>
           </SheetContent>
         </Sheet>
