@@ -26,22 +26,7 @@ export default function Lightingmanufacturers() {
       description: "Centralized control and distribution of power for motors in industrial settings.",
       image: "https://imgs.search.brave.com/qQUAy0Bn6OT2t8ZYGFc2vVVK3z6_ehk7VgLnwytXDQc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmV4ZXJ0aGVybS5j/b20vaHMtZnMvaHVi/ZnMvRXhlcnRoZXJt/JTIwMjAyMy9JbWFn/ZS9zaHV0dGVyc3Rv/Y2tfMTU3OTkxMDk4/OS5qcGc_d2lkdGg9/MjAwMCZuYW1lPXNo/dXR0ZXJzdG9ja18x/NTc5OTEwOTg5Lmpw/Zw?height=300&width=400",
     },
-    // {
-    //   name: "Lighting Control Panels",
-    //   description: "Sophisticated lighting control systems for energy efficiency and automation.",
-    //   image: "/placeholder.svg?height=300&width=400",
-    // },
-    // {
-    //   name: "PLC Panels",
-    //   description: "Programmable Logic Controller panels for automated industrial processes.",
-    //   image: "/placeholder.svg?height=300&width=400",
-    // },
-    // {
-    //   name: "HVAC Control Panels",
-    //   description: "Specialized panels for heating, ventilation, and air conditioning control systems.",
-    //   image: "/placeholder.svg?height=300&width=400",
-    // },
-  ]
+ ]
 
   return (
     <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50">
@@ -102,9 +87,6 @@ export default function Lightingmanufacturers() {
                 <span className="text-gray-700">On-time delivery and installation support</span>
               </li>
             </ul>
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white">
-              Learn About Our Process <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
           <div
             className={`relative h-[400px] rounded-lg overflow-hidden shadow-xl transition-all duration-700 ${
@@ -148,11 +130,6 @@ export default function Lightingmanufacturers() {
             </Card>
           ))}
         </div>
-
-        <div className="mt-12 text-center">
-          <Button className="bg-gray-900 hover:bg-gray-700 text-white">Explore Our Panel Manufacturing</Button>
-        </div>
-      </div>
-    </section>
+      </section>
   )
 }
