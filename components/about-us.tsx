@@ -37,7 +37,7 @@ export default function AboutUs() {
     {
       name: "Rahul Choudhary",
       position: "Managing Director",
-      esignation: "Maintenance and Support",
+      designation: "Maintenance and Support",
       contact: "+91 70000 50979",
       image: "/babba.jpg",
       email: "rahul39tx@gmail.com",
@@ -130,6 +130,7 @@ export default function AboutUs() {
               </CardHeader>
               <CardContent className="space-y-3">
                 <p className="text-gray-600 font-medium">{member.position}</p>
+                <p className="text-gray-600 font-medium">{member.designation}</p>
                 <div className="flex items-center text-gray-700">
                   <Phone className="h-4 w-4 mr-2" />
                   <a href={`tel:${member.contact}`} className="hover:text-gray-900">{member.contact}</a>
