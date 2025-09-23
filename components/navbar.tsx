@@ -20,7 +20,7 @@ export default function Navbar({
   panelRef,
   clientsRef,
   aboutRef,
-  contactRef={footerRef},
+  contactRef,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
