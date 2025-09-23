@@ -20,7 +20,7 @@ export default function Navbar({
   panelRef,
   clientsRef,
   aboutRef,
-  contactRef,
+  contactRef={footerRef},
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -89,7 +89,7 @@ export default function Navbar({
             About Us
           </button>
           <Button
-            onClick={() => scrollToSection(contactRef)}
+            onClick={() => scrollToSection(footerRef)}
             className="bg-gray-900 text-white hover:bg-gray-800"
           >
             Contact Us
@@ -137,7 +137,7 @@ export default function Navbar({
                 About Us
               </button>
               <button
-                onClick={() => scrollToSection(contactRef)}
+                onClick={() => scrollToSection(footerRef)}
                 className="w-full bg-gray-900 text-white hover:bg-gray-800 rounded-lg py-2"
               >
                 Contact Us
