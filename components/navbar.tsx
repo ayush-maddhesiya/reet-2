@@ -11,7 +11,7 @@ interface NavbarProps {
   panelRef: RefObject<HTMLDivElement>
   clientsRef: RefObject<HTMLDivElement>
   aboutRef: RefObject<HTMLDivElement>
-  contactRef: RefObject<HTMLDivElement> // contact section
+  contactRef: RefObject<HTMLDivElement>
 }
 
 export default function Navbar({
@@ -49,11 +49,9 @@ export default function Navbar({
     >
       <div className="container flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          {/* Logo image: replace path with your desired format (e.g., PNG/WebP/GIF) */}
+          
           <img src="/upload/logo.webp" alt="Reet Associates" className="h-10 w-auto" />
         </div>
-
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => scrollToSection(electricalRef)}
@@ -92,8 +90,6 @@ export default function Navbar({
             Contact Us
           </Button>
         </nav>
-
-        {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="md:hidden">
