@@ -12,7 +12,7 @@ export default function Hero() {
               Powering Your <span className="text-gray-800">Electrical</span> Solutions
             </h1>
             <p className="text-xl text-gray-600 max-w-lg">
-              Reet Associates provides comprehensive electrical services, panel manufacturing, and government project
+              Reet Associates provides comprehensive electrical services, panel manufacturing, lighting manufacturing and project
               solutions with excellence and reliability.
             </p>
           </div>
