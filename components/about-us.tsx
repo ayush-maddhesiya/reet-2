@@ -13,27 +13,31 @@ export default function AboutUs() {
     {
       name: "Rahul Aakhand",
       position: "Managing Director",
+      designation: "Electrical Consultant and Contractor",
       contact: "+91 81097 89795",
       image: "/akhand.jpg",
       email: "rahulaakhand@gmail.com",
     },
     {
       name: "Shakti Maddhesiya",
-      position: "Technical Director",
+      position: "Managing Director",
+      designation: "Lighting Manufacturers",
       contact: "+91 79995 50626",
       image: "/shakti.jpg",
       email: "er.shakti.madheshiya@gmail.com",
     },
     {
       name: "Rohan Raguvanshi",
-      position: "Operations Manager",
+      position: "Managing Director",
+      designation: "Electrical Panel Manufacturers",
       contact: "+91 83195 43348",
       image: "/rohan.jpg",
       email: "rohandltc@gmail.com",
     },
     {
       name: "Rahul Choudhary",
-      position: "Business Development Manager",
+      position: "Managing Director",
+      esignation: "Maintenance and Support",
       contact: "+91 70000 50979",
       image: "/babba.jpg",
       email: "rahul39tx@gmail.com",
@@ -65,7 +69,7 @@ export default function AboutUs() {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">Our Story</h3>
               <p className="text-gray-600">
-                Established in 2005, Reet Associates has evolved from a small electrical services provider to a full-service solutions company catering to a wide range of industries. Our focus on quality, innovation, and timely delivery has earned the trust of our clients nationwide.
+                Established in 2021, Reet Associates has evolved from a small electrical services provider to a full-service solutions company catering to a wide range of industries. Our focus on quality, innovation, and timely delivery has earned the trust of our clients nationwide.
               </p>
               <p className="text-gray-600">
                 Our multidisciplinary team combines expertise in electrical engineering, panel manufacturing, and project management to deliver high-impact solutions. Safety, precision, and customer satisfaction are at the core of everything we do.
