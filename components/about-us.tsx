@@ -93,7 +93,7 @@ export default function AboutUs() {
 
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/team-group.jpg"
+                src="/public/team-group.jpg"
                 alt="Reet Associates Team"
                 className="object-cover w-full h-full"
               />
