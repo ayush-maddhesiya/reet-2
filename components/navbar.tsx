@@ -27,10 +27,12 @@ export default function Navbar({
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
+      requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 10)
+      })
     }
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -48,10 +50,12 @@ export default function Navbar({
       }`}
     >
       <div className="container flex items-center justify-between">
+        {/* Logo */}
         <div className="flex items-center space-x-2">
-          
-          <img src="/upload/logo.webp" alt="Reet Associates" className="h-10 w-auto" />
+          <img src="/upload/logo.png" alt="Reet Associates" className="h-10 w-auto" />
         </div>
+
+        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => scrollToSection(electricalRef)}
@@ -84,12 +88,14 @@ export default function Navbar({
             About Us
           </button>
           <Button
-            onClick={() => scrollToSection(contactRef, true)}
-            className="bg-gray-300 hover:bg-white"
+            onClick={() => scrollToSection(contactRef)}
+            className="bg-gray-900 text-white hover:bg-gray-800"
           >
             Contact Us
           </Button>
         </nav>
+
+        {/* Mobile Nav */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon" className="md:hidden">
@@ -130,8 +136,8 @@ export default function Navbar({
                 About Us
               </button>
               <button
-                onClick={() => scrollToSection(contactRef, true)}
-                className="w-full bg-gray-900 text-white hover:bg-gray-800"
+                onClick={() => scrollToSection(contactRef)}
+                className="w-full bg-gray-900 text-white hover:bg-gray-800 rounded-lg py-2"
               >
                 Contact Us
               </button>
