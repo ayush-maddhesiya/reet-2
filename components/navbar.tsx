@@ -84,7 +84,7 @@ export default function Navbar({
             About Us
           </button>
           <Button
-            onClick={() => scrollToSection(contactRef)}
+            onClick={() => scrollToSection(contactRef, true)}
             className="bg-gray-300 hover:bg-white"
           >
             Contact Us
@@ -130,7 +130,7 @@ export default function Navbar({
                 About Us
               </button>
               <button
-                onClick={() => scrollToSection(contactRef)}
+                onClick={() => scrollToSection(contactRef, true)}
                 className="w-full bg-gray-900 text-white hover:bg-gray-800"
               >
                 Contact Us
