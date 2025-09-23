@@ -50,12 +50,12 @@ export default function Navbar({
       }`}
     >
       <div className="container flex items-center justify-between">
-        {/* Logo */}
+        
         <div className="flex items-center space-x-2">
-          <img src="/upload/logo.png" alt="Reet Associates" className="h-10 w-auto" />
+          <img src="/upload/logo.png" alt="Reet Associates" className="h-8 w-auto" />
         </div>
 
-        {/* Desktop Nav */}
+       
         <nav className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => scrollToSection(electricalRef)}
