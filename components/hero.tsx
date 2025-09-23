@@ -15,23 +15,14 @@ export default function Hero() {
               Reet Associates provides comprehensive electrical services, panel manufacturing, and government project
               solutions with excellence and reliability.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-gray-900 hover:bg-gray-800 text-white">
-                Our Services <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button variant="outline" className="border-gray-300">
-                Contact Us
-              </Button>
-            </div>
           </div>
           <div className="relative w-full h-[350px] md:h-[450px] lg:h-[400px] rounded-lg overflow-hidden shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1681581565914-a00677edee63?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/hero-image.jpg"
               alt="Reet Associates Electrical Solutions"
               className="object-cover w-full h-full"
             />
           </div>
-
         </div>
 
         <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
