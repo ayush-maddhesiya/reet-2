@@ -65,7 +65,7 @@ export default function Navbar({
               alt="Reet Associates"
               className="h-10 w-auto"
             />
-            <p className="text-gray-600 text-3xl">Reet Associates</p>
+            <p className="text-gray-600 text-2xl">Reet Associates</p>
           </button>
         </div>
 
