@@ -62,7 +62,7 @@ export default function Navbar({
             onClick={() => scrollToSection(electricalRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
           >
-            Electrical Solution
+            Electrical Solutions
           </button>
           <button
             onClick={() => scrollToSection(lightingRef)}
@@ -110,7 +110,7 @@ export default function Navbar({
                 onClick={() => scrollToSection(electricalRef)}
                 className="text-left text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
               >
-                Electrical Solution
+                Electrical Solutions
               </button>
               <button
                 onClick={() => scrollToSection(lightingRef)}
