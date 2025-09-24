@@ -19,7 +19,7 @@ export default function AboutUs() {
       email: "rahulaakhand@gmail.com",
     },
     {
-      name: "Shakti Maddhesiya",
+      name: "Shakti Madheshiya",
       position: "Managing Director",
       designation: "Lighting Manufacturers",
       contact: "+91 79995 50626",
@@ -27,7 +27,7 @@ export default function AboutUs() {
       email: "er.shakti.madheshiya@gmail.com",
     },
     {
-      name: "Rohan Raguvanshi",
+      name: "Rohan Raghuvanshi",
       position: "Managing Director",
       designation: "Electrical Panel Manufacturers",
       contact: "+91 83195 43348",
