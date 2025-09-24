@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 interface NavbarProps {
-  electricalRef: RefObject<HTMLDivElement>
-  lightingRef: RefObject<HTMLDivElement>
-  panelRef: RefObject<HTMLDivElement>
-  clientsRef: RefObject<HTMLDivElement>
-  aboutRef: RefObject<HTMLDivElement>
-  contactRef: RefObject<HTMLDivElement>
+  electricalRef: RefObject<HTMLDivElement | null>
+  lightingRef: RefObject<HTMLDivElement | null>
+  panelRef: RefObject<HTMLDivElement | null>
+  clientsRef: RefObject<HTMLDivElement | null>
+  aboutRef: RefObject<HTMLDivElement | null>
+  contactRef: RefObject<HTMLDivElement | null>
 }
 
 export default function Navbar({
@@ -36,28 +36,41 @@ export default function Navbar({
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const scrollToSection = (ref: RefObject<HTMLDivElement>) => {
+  const scrollToSection = (ref: RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" })
       setIsOpen(false)
     }
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+    setIsOpen(false)
+  }
+
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white/80 backdrop-blur-sm py-4"
-      }`}
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-2" : "bg-white/80 backdrop-blur-sm py-4"
+        }`}
     >
       <div className="container flex items-center justify-between">
-        
+
         <div className="flex items-center space-x-2">
-          <img src="/upload/logo.png" 
-            alt="Reet Associates" className="h-10 w-auto" />
+          <button
+            onClick={scrollToTop}
+            className="flex items-center space-x-2 text-gray-900 hover:text-gray-700 transition-colors"
+          >
+            <img
+              src="/upload/logo.png"
+              alt="Reet Associates"
+              className="h-10 w-auto"
+            />
+            <p className="text-gray-600 text-3xl">Reet Associates</p>
+          </button>
         </div>
 
-       
-        <nav className="hidden md:flex items-center space-x-8">
+
+        <nav className="hidden md:flex items-center space-x-6">
           <button
             onClick={() => scrollToSection(electricalRef)}
             className="text-gray-700 hover:text-gray-900 font-medium transition-colors"
@@ -89,7 +102,7 @@ export default function Navbar({
             About Us
           </button>
           <Button
-            onClick={() => scrollToSection(footerRef)}
+            onClick={() => scrollToSection(contactRef)}
             className="bg-gray-900 text-white hover:bg-gray-800"
           >
             Contact Us
@@ -137,7 +150,7 @@ export default function Navbar({
                 About Us
               </button>
               <button
-                onClick={() => scrollToSection(footerRef)}
+                onClick={() => scrollToSection(contactRef)}
                 className="w-full bg-gray-900 text-white hover:bg-gray-800 rounded-lg py-2"
               >
                 Contact Us

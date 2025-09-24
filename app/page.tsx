@@ -21,6 +21,7 @@ export default function Home() {
   const panelRef = useRef<HTMLDivElement>(null)
   const clientsRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
 
   // Handle scroll to top button visibility
   useEffect(() => {
@@ -48,6 +49,7 @@ export default function Home() {
         panelRef={panelRef}
         clientsRef={clientsRef}
         aboutRef={aboutRef}
+        contactRef={contactRef}
       />
 
       <Hero />
@@ -72,7 +74,9 @@ export default function Home() {
         <AboutUs />
       </div>
 
-      <Footer />
+      <div ref={contactRef} id="contact">
+        <Footer />
+      </div>
 
       {showScrollTop && (
         <Button
