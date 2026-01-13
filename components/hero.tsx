@@ -18,7 +18,7 @@ export default function Hero() {
           </div>
           <div className="relative w-full h-[350px] md:h-[450px] lg:h-[400px] rounded-lg overflow-hidden shadow-xl">
             <img
-              src="/hero-image.jpg"
+              src="reet hero.png"
               alt="Reet Associates Electrical Solutions"
               className="object-cover w-full h-full"
             />
